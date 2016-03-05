@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[])
 {
 	char a[1010],b[1010],ch;
-	int i,n,k,t,op,j;
+	int i,n,k,t,op,j,l;
 	scanf("%d",&t);
 	for (i = 0; i < t; ++i)
 	{
@@ -13,12 +13,12 @@ int main(int argc, char const *argv[])
 		scanf("%s",&b);
 		n=strlen(a);
 		k=strlen(b);
-		for (i = 0; i < n; ++i)
+		for (j = 0; j < n; ++j)
 		{
-			ch=a[i];
-			for(j = 0; j < k; j++)
+			ch=a[j];
+			for(l = 0; l < k; l++)
 			{
-				if(ch==b[j])
+				if(ch==b[l])
 				{
 					op=1;
 					break;
