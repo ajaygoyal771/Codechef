@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+	int n,i,k,count=0,n1,n2;
+	scanf("%d",&n);
+	scanf("%d",&k);
+	for(i=0;i<n;i++)
+	{
+	    if(k!=0)
+        {
+            scanf("%d",&n1);
+            n2=n1%k;
+            if(n2==0)
+            {
+                count=count+1;
+            }
+        }
+	}
+	printf("%d\n",count);
+	return 0;
+}
