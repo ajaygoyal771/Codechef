@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+	int a,n,k,arr[100],i,var;
+	scanf("%d %d %d",&a,&n,&k);
+	i=0;
+	while(i != k)
+    {
+        var=a%(n+1);
+        //printf("var %d-%d\n",i,var);
+        a=a/(n+1);
+        //printf("a %d-%d\n",i,a);
+        arr[i]=var;
+        i++;
+    }
+    for(i=0;i<k;i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+	return 0;
+}
