@@ -1,0 +1,51 @@
+#include <stdio.h>
+int main(int argc, char const *argv[])
+{
+    int m,i,j;
+    long long int q,a,b,c,n;
+    scanf("%lld %d",&n,&m);
+    if(n==1)
+    {
+        for(i=0;i<m;i++)
+        {
+            scanf("%lld",&q);
+            if(q==3)
+            {
+                printf("1\n");
+            }
+            else
+            {
+                printf("0\n");
+            }
+        }
+    }
+    else
+    {
+        a=n+2;
+        b=3*n;
+        for(i=0;i<m;i++)
+        {
+            scanf("%lld",&q);
+            if(q >= a && q <= b)
+            {
+                if (q <= 2*n+1)
+                {
+                    /* code */
+                    c=q-a+1;
+                    printf("%lld\n",c);
+                }
+                else
+                {
+                    c=b-q+1;
+                    printf("%lld\n",c);
+                }
+            }
+            else
+            {
+                printf("0\n");
+            }
+        }
+    }
+    return 0;
+}
+ 
